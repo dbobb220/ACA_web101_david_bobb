@@ -1,0 +1,57 @@
+body {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+}
+
+header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+header > div {
+    margin: 10px;
+}
+
+img#profile {
+    width: 104px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+
+.profile_pc.social_links {
+    width: 140px;
+    height: 140px;
+}
+
+.contact_info {
+    text-align: center;
+    clear: right;
+    line-height: 1;
+    width: -webkit-fill-available;
+}
+
+
+main {
+    clear: both;
+    display:flex;
+}
+
+main > div {
+    margin: 10px;
+}
+
+div#contact h4 {
+    width: 30%;
+}
+
+div#contact {
+    display: flex;
+    flex-direction: row;
+}
+
+div#contact h4 {
+    width: 30%;
+}
