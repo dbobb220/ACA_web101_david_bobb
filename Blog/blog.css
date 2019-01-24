@@ -1,3 +1,12 @@
+
+header {
+    height: 100px;
+    background: lavender;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 15px;
+}
+
 h1 {
     text-align: center;
 }
@@ -5,12 +14,15 @@ h1 {
 body {
     background: #f6f6f6;
     font-style: normal;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
 }
 
 section {
     margin-left: 10%;
     margin-right: 10%;
     border: 2px solid gray;
+    margin-bottom:40px;
 }
 
 article {
@@ -19,7 +31,11 @@ article {
     border: 1px solid  #d7d7d7;
 }
 
-h2 {margin-left: 5px;text-decoration: underline;margin-bottom: 0px;}
+h2 {margin-left: 5px;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 
 div.date_line p {
     margin: 2px 0px 0px 20px;
@@ -28,4 +44,14 @@ div.date_line p {
 
 div.description p {
     margin-left: 50px;
+}
+
+footer {
+    height: 100px;
+    background: lavender;
+}
+
+div.date_line p {
+    color: #bdbdbd;
+    font-size: 12px;
 }
