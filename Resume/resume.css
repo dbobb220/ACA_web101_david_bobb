@@ -1,8 +1,9 @@
 body {
     width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+    margin: 0;
 }
 
 header {
@@ -15,15 +16,16 @@ header > div {
 }
 
 img#profile {
-    width: 104px;
+    width: 130px;
     border-radius: 50%;
     margin-bottom: 5px;
 }
 
 
 .profile_pc.social_links {
-    width: 140px;
+    min-width: 195px;
     height: 140px;
+    text-align: center;
 }
 
 .contact_info {
@@ -53,5 +55,55 @@ div#contact {
 }
 
 div#contact h4 {
+    width: 30%;
+}
+
+#left_column section, 
+#right_column section {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#left_column section h3,
+#right_column section h3 {
+    margin: 0;
+    border-bottom: 1px solid #000;
+}
+
+#left_column section {
+    background: lightblue;
+}
+
+#left_column section {
+    padding: 10px;
+    background: lightblue;
+    margin-bottom: 10px;
+}
+
+#left_column section h3 {
+    margin: 0;
+    border-bottom: 1px solid #000;
+}
+
+div#right_column {
+    width: -webkit-fill-available;
+}
+
+div#right_column section {
+    background: lightblue;
+    margin-bottom: 25px;
+}
+
+article .subheading {
+    width: fit-content;
+    display: flex;
+    width: -webkit-fill-available;
+}
+
+div#right_column {
+    width: -webkit-fill-available;
+}
+
+.subheading p {
     width: 30%;
 }

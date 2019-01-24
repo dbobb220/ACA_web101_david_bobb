@@ -1,0 +1,84 @@
+/* Extra Small and up (Portrait Phones) */
+
+main {
+    display: flex;
+    margin:10px;
+}
+
+img {width: 100%;}
+
+section.main_story {
+    width: 100%;
+    margin: 0;
+}
+
+div#top_stories {
+    display:none;
+}
+
+h2.story_title {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.cta {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+button.read_more {
+    font-size: 1.25em;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+}
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+    div#top_stories {
+        display:block;
+        width: 50%;
+        margin-top: 20px;
+    }
+    
+    div#main_content {
+        margin: 20px;
+    }
+
+    #top_stories h4 {
+        margin: 0;
+        font-size: 20px;
+    }
+    
+    .ts_blurb h6 {
+        margin: 5px 0 0 0;
+        font-size: 15px;
+    }
+    
+    .ts_blurb p {
+        font-size: 9px;
+        margin-top: 2px;
+    }
+
+    .ts_blurb {
+        margin-bottom: 10px;
+    }
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+}
