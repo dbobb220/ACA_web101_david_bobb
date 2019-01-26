@@ -1,48 +1,30 @@
 body {
-    width: 70%;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 50px;
-    margin: 0;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1px solid #000;
 }
 
 header {
     display: flex;
-    margin-bottom: 20px;
-}
-
-header > div {
-    margin: 10px;
+    background-image:url('/Resume/rustic_bkgrd.jpeg');
+    height: 300px;
 }
 
 img#profile {
-    width: 130px;
+    width: 170px;
     border-radius: 50%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
-
 
 .profile_pc.social_links {
-    min-width: 195px;
-    height: 140px;
-    text-align: center;
+text-align: center;
 }
-
-.contact_info {
-    text-align: center;
-    clear: right;
-    line-height: 1;
-    width: -webkit-fill-available;
-}
-
 
 main {
     clear: both;
     display:flex;
-}
-
-main > div {
-    margin: 10px;
 }
 
 div#contact h4 {
@@ -55,13 +37,13 @@ div#contact {
 }
 
 div#contact h4 {
-    width: 30%;
+    width: 33.33333%;
+    text-align: center;
 }
 
 #left_column section, 
 #right_column section {
     padding: 10px;
-    margin-bottom: 10px;
 }
 
 #left_column section h3,
@@ -70,28 +52,22 @@ div#contact h4 {
     border-bottom: 1px solid #000;
 }
 
-#left_column section {
-    background: lightblue;
-}
-
-#left_column section {
-    padding: 10px;
-    background: lightblue;
-    margin-bottom: 10px;
+#left_column section,
+.profile_pc.social_links {
+    padding: 10px 0px;
+    background: #C48A50;
 }
 
 #left_column section h3 {
     margin: 0;
     border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    padding: 10px 5px;
+    text-align: center;
 }
 
 div#right_column {
     width: -webkit-fill-available;
-}
-
-div#right_column section {
-    background: lightblue;
-    margin-bottom: 25px;
 }
 
 article .subheading {
@@ -108,3 +84,39 @@ div#right_column {
     width: 30%;
 }
 
+.contact_info {
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    height: 150px;
+    width: 630px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h2#name {
+    text-align: center;
+    margin: 20px 0px 10px 0;
+    font-size: 2.5em;
+}
+
+div#left_column {
+    width: 45%;
+}
+
+body {
+    font-family: Arial;
+}
+
+#left_column p {
+    padding: 10px;
+}
+
+#left_column section.education.certification p {
+    margin: 0;
+    padding: 10px;
+}
+
+div#right_column section article {
+    margin: 20px 0;
+}
