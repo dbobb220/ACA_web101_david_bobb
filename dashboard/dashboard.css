@@ -3,13 +3,20 @@ body {
     margin: 0;
 }
 
+header {
+    background: aliceblue;
+    text-align: center;
+    font-size: 3em;
+    padding: 20px 0;
+}
+
 #dashboard_container {
     max-width: 900px;
     margin: auto;
-}
-
-.container {
-    width:50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 500px;
+    padding: 20px 0;
 }
 
 .zero.calc_button {
@@ -20,4 +27,9 @@ body {
 #calculator_buttons {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer {
+    background: aliceblue;
+    height: -webkit-fill-available;
 }
