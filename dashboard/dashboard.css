@@ -10,6 +10,8 @@ header {
     padding: 20px 0;
 }
 
+/* setup container boxes */
+
 #dashboard_container {
     max-width: 900px;
     margin: auto;
@@ -23,6 +25,8 @@ header {
     grid-column-start:1;
     grid-column-end:3;
 }
+
+/* calculator css */
 
 #calculator_buttons {
     display:grid;
