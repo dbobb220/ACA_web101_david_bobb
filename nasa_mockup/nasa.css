@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    background-color: pink;
+}
+
+div#page_container {
+    width: 850px;
+    margin: 10px auto;
+}
+
+#image_section {
+    width:850px;
+    height:450px;
+}
+
+footer {
+    background-color:pink;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}

@@ -21,12 +21,13 @@ header {
     padding: 20px 0;
 }
 
+/* calculator css */
+
+
 .zero.calc_button {
     grid-column-start:1;
     grid-column-end:3;
 }
-
-/* calculator css */
 
 #calculator_buttons {
     display:grid;
