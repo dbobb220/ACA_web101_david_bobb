@@ -10,6 +10,11 @@ header {
     padding: 20px 0;
 }
 
+footer {
+    background: aliceblue;
+    height: 200px;
+}
+
 /* setup container boxes */
 
 #dashboard_container {
@@ -17,8 +22,67 @@ header {
     margin: auto;
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 500px;
     padding: 20px 0;
+    grid-template-rows: 330px;
+}
+
+div#date_time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* clock css */
+
+div#clock {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    width: fit-content;
+    font-family: 'Comfortaa', sans-serif;
+    background: #000;
+    color: #fff;
+    border-radius: 15px;
+    border: 5px solid #79512A;
+}
+
+.hour, .colon, .minutes {
+    padding: 9px;
+}
+
+/* calendar css */
+
+div#calendar {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: fit-content;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.date {
+    text-align: center;
+    padding: 10px;
+    font-size: 4em;
+}
+
+.day {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.month_year {
+    font-size: 1.5em;
+    background: red;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid #000;
+}
+
+.colon {
+    bottom: 4px;
+    position: relative;
 }
 
 /* calculator css */
@@ -27,14 +91,61 @@ header {
 .zero.calc_button {
     grid-column-start:1;
     grid-column-end:3;
+    width: -webkit-fill-available;
+    border-radius: 25px;
 }
 
 #calculator_buttons {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 10px;
 }
 
-footer {
-    background: aliceblue;
-    height: -webkit-fill-available;
+div#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc_container {
+    background: #000;
+    padding: 5px;
+    width: 170px;
+    border-radius: 5px;
+}
+
+input#calculator_screen {
+    text-align: right;
+    padding: 10px 5px 5px 0;
+    font-size: 2.5em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0px;
+    background: #000;
+    width: -webkit-fill-available;
+}
+
+button.calc_button {
+    height: 32px;
+    -webkit-appearance: none;
+    border: 0px;
+    border-radius: 50%;
+    padding: 0px;
+    width: 32px;
+}
+
+button.gray {
+    background: #949494;
+}
+
+button.symbol {
+    background-color: #EA872B;
+    color:#fff;
+}
+
+button.digit {
+    background: #262626;
+    color: #fff;
 }
