@@ -15,16 +15,97 @@ header {
 
 div#page_container {
     width: 850px;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 #image_section {
     width:850px;
     height:450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('nasa_proj_img.jpeg');
+    font-size: 6em;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section.additional_info {
+    display: flex;
+    justify-content: space-evenly;
+    background: #E2E2E2;
+    height: 324px;
+}
+
+section.additional_info article {
+    width: 270px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+article.social.info ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.5;
+    color: #474747;
+}
+
+section.additional_info article.social.info {
+    margin-left: 20px;
+}
+
+article.office.info .address {
+    line-height: 1.5;
+    color: #474747;
+}
+
+section.additional_info {
+    font-family: Lato, sans-serif;
+}
+
+article.contact.info form {
+    color: #474747;
+}
+
+input#name, input#message {
+    width: -webkit-fill-available;
+    border: 0px;
+}
+
+section.additional_info article.contact.info {
+    margin-right: 20px;
+}
+
+input#name {
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+input#message {
+    height: 60px;
+}
+
+div#form_name,div#form_message {
+    margin-bottom: 5px;
+}
+
+input#send_btn {
+    margin-top: 10px;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 7px 18px;
+    background-color: #444444;
+    color: #fff;
+    font-size: 1em;
+    border: 0px;
+    letter-spacing: 0.5px;
 }
 
 footer {
     background-color:pink;
     width: -webkit-fill-available;
-    height: -webkit-fill-available;
+    height: 80px;
 }

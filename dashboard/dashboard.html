@@ -15,18 +15,20 @@
         <div id="dashboard_container">
             <section class="container">
                 <div id="greeting">
-                    <p>Hello, <span id="name">______</span>!</p>
-                    <p id="friendly_greeting">Did you know that this is a fun fact placeholder</p>
+                    <h2>Hello, <span id="name">______</span>!</h2>
+                    <p id="friendly_greeting">Did you know that this is a fun fact placeholder!</p>
                 </div>
             </section>
             <section class="container">
                 <div id="todo">
-                    <input type="text" placeholder="Enter items here">
-                    <ul class="listed_todo">
-                        <li>Take out the trash</li>
-                        <li>Mow the lawn</li>
-                        <li>Wash the car</li>
-                        <li>Walk the dog</li>
+                    <h2>To Do List</h2>
+                    <span class="add_btn">+</span>
+                    <input type="text" id="todo_input" placeholder="Enter items here...">
+                    <ul id="listed_todo">
+                        <li>Take out the trash<span class="close">-</span></li>
+                        <li class="checked">Mow the lawn<span class="close">-</span></li>
+                        <li>Wash the car<span class="close">-</span></li>
+                        <li>Walk the dog<span class="close">-</span></li>
                     </ul>
                 </div>
             </section>

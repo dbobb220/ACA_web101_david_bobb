@@ -26,10 +26,14 @@ footer {
     grid-template-rows: 330px;
 }
 
-div#date_time {
+section.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+section.container h2 {
+    text-align: center;
 }
 
 /* clock css */
@@ -102,12 +106,6 @@ div#calendar {
     grid-row-gap: 10px;
 }
 
-div#calculator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .calc_container {
     background: #000;
     padding: 5px;
@@ -149,3 +147,109 @@ button.digit {
     background: #262626;
     color: #fff;
 }
+
+/* To Do CSS */
+
+.add_btn, input#todo_input {
+    font-size: 1.25em;
+}
+
+.add_btn {
+    border-radius: 50%;
+    color: green;
+    border: 2px solid green;
+    padding: 1px 7px;
+}
+
+input#todo_input {margin-left: 5px;padding: 5px;}
+
+ul#listed_todo {
+    padding: 0;
+    list-style:none;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 7px 5px 7px 30px;
+    font-size: 100%;
+    transition: 0.2s;
+    user-select: none;
+    border-bottom: #eee 1px dashed;
+    border-top: #eee 1px dashed;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #efefef;
+    color: #000;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #000;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.add_btn:hover {
+    border: 2px solid green;
+    color: #fff;
+    background: green;
+    transition: 0.4s;
+}
+
+.close {
+    padding: 0px 7px;
+    position: absolute;
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    right: 5px;
+    top: 6px;
+}
+
+.close:hover {
+    border-color: red;
+    background: red;
+    color: #fff;
+    transition: 0.4s;
+}
+
+/* Greeting CSS */
+
+p#friendly_greeting {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 175px;
+    background: #FFEF7A;
+    line-height: 1.5;
+}
+
+/* Mobile Style */
+
+@media (max-width: 600px) {
+    #dashboard_container {
+        display:flex;
+        flex-direction: column;
+    }
+    section.container {
+        margin-bottom: 30px;
+    }
+   
+}
+
+/* No need for tablet styling as CSS grid was used to work
+for tablet design and for desktop design as per wireframes */
