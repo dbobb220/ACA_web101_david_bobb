@@ -54,6 +54,10 @@ nav a:hover {
     width: 960px;
 }
 
+#hamburger_nav {
+    display:none;
+}
+
 /*styling the image*/
 
 img#main_img {
@@ -196,4 +200,124 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* iPad screens */
+
+@media (max-width: 959px) {
+    .header_container {
+        width:760px;
+    }
+    .main_container {
+        width:760px;
+    }
+
+    nav a {
+        margin: auto 8px;
+    }
+
+    img#main_img {
+        width:760px;
+    }
+
+    nav a {
+        margin: auto 8px;
+    }
+    
+    section.featured article {
+        width: 180px;
+    }
+    
+    div.feature_img img {
+        width: 180px;
+    }
+    
+    article.content_feature {
+        max-height: 613px;
+    }
+
+    div#ad_box {
+        top: -17px;
+    }    
+}
+
+/* small phone sreen */
+
+@media (max-width: 759px) {
+    .header_container {
+        width: -webkit-fill-available;
+        justify-content: space-around;
+    }
+    .main_container {
+        width: -webkit-fill-available;
+    }
+
+    nav a {
+        margin: auto 8px;
+    }
+
+    img#main_img {
+        display: none;
+    }
+    
+    section.featured {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: auto 8px;
+    }
+    
+    article.content_feature {
+        max-height: 684px;
+    }
+
+    img#main_img {
+        display: none;
+    }
+    
+    section.featured, section.content_box {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 10px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    
+    section.featured article, 
+    section.content_box article, 
+    .hair_and_add {
+        max-width: -webkit-fill-available;
+        width: -webkit-fill-available;
+    }
+    
+    div.feature_img img {
+        width: 380px;
+    }
+    
+    
+    img#person_transparent {
+        display: none;
+    }
+    
+    article.content_feature {
+        margin-bottom: 40px;
+    }
+    
+    div#ad_box {
+        position: static;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #hamburger_nav {
+        display: block;
+        color: #fff;
+        font-size: 3em;
+        text-align: center;
+    }
 }
