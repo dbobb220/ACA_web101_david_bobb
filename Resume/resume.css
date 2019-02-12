@@ -8,7 +8,7 @@ body {
 
 header {
     display: flex;
-    background-image:url('/Resume/rustic_bkgrd.jpeg');
+    background-image:url('./img/rustic_bkgrd.jpeg');
     height: 300px;
 }
 
