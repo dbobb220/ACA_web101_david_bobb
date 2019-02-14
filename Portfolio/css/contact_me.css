@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/Portfolio/img/dt-atx-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color:#fff;
+    margin:0;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 3% 10%;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+  }
+
+  nav > a {
+    margin: 2% 1% 3%;
+    height: 10%;
+    width: 15%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 20px; 
+    text-align: center;
+    border: 2px solid white;
+  }
+  
+  .has-border {
+    border-radius: 25px;
+    border: 2px solid #0795C3;
+    background: none;
+    padding: 20px; 
+    width:fit-content;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  h1 {width: fit-content;margin: 20px auto;background: #000;padding: 20px;}
+
+.blockquote {
+    margin: 20px auto;
+    font-size: 1.25em;
+    width: fit-content;
+    padding: 10px;
+}
+
+.contact_methods {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #000;
+    padding: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+div.contact_methods article h4 {
+    text-align: center;
+}
+
+table {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+
+address {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+}
+
+button {
+    margin-top: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #fff;
+    background: #000;
+    color: #fff;
+    padding: 10px 26px;
+    font-size: 1em;
+}
+
+fieldset input {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    background: #000;
+    padding: 40px;
+}
+
+@media (max-width:500px) {
+    .contact_methods {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    table {
+        margin: 0 auto;
+    }
+    
+    form {
+        margin: 0 auto;
+    }
+    
+    fieldset {
+        width: 210px;
+        margin: 0 auto;
+    }
+    
+    address {
+        width: 210px;
+        margin: 0 auto;
+    }
+}

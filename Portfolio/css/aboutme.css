@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/Portfolio/img/dt-atx-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color:#fff;
+    margin:0;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 3% 10%;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+  }
+
+  nav > a {
+    margin: 2% 1% 3%;
+    height: 10%;
+    width: 15%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 20px; 
+    text-align: center;
+    border: 2px solid white;
+  }
+  
+  .has-border {
+    border-radius: 25px;
+    border: 2px solid #0795C3;
+    background: none;
+    padding: 20px; 
+    width:fit-content;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .my_story,
+  .my_work {
+    width: 980px;
+    margin: auto;
+    background: #000;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+section.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #000;
+    color:#fff;
+}
+
+form.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+}
+
+form.subscribe input {
+    margin-bottom: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearnce: none;
+    border: 0px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+@media (max-width:500px) {
+    section.footer h4 {
+        text-align: center;
+    }
+
+    .my_story, .my_work {
+        width: -webkit-fill-available;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    section.footer {
+        flex-direction: column;
+    }
+    
+    form.subscribe {
+        align-items: center;
+    }
+    
+    form.subscribe input {
+        width: 150px;
+    }
+
+    address {
+        margin: 0 20px;
+    }
+}
