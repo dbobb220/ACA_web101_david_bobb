@@ -89,3 +89,70 @@ body {
     letter-spacing: 16px;
     font-style: italic;
   }
+
+  /* Animations */
+
+img#profile-pic {
+  animation: flip 5s infinite;
+}
+
+@keyframes flip {
+  from {
+      transform:rotate(0deg)
+  }
+  to {
+      transform: rotate(360deg)
+  }
+}
+
+main h1, main h2 {
+  animation: title 10s;
+}
+
+@keyframes title {
+  0% {
+      color: #fff;
+      border-bottom: #fff;
+  }
+  10% {
+      color: yellow;
+      border-bottom: yellow;
+  }
+  20% {
+      color: orange;
+      border-bottom: orange;
+  }
+  30% {
+      color: orangered;
+      border-bottom: orangered;
+  }
+  40% {
+      color: red;
+      border-bottom: red;
+  }
+  50% {
+      color: #000;
+      border-bottom: #000;
+  }
+  60% {
+      color: red;
+      border-bottom: red;
+  }
+  70% {
+      color: orangered;
+      border-bottom: orangered;
+  }
+  80% {
+      color: orange;
+      border-bottom: orange;
+  }
+  90% {
+      color: yellow;
+      border-bottom: yellow;
+  }
+  100% {
+      color: #fff;
+      border-bottom: #fff;
+  }
+}
+
