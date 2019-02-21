@@ -1,0 +1,49 @@
+/* Remove Body Margin*/
+
+body {
+    margin: 0;
+}
+
+/*Give header with page name*/
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background: lightblue;
+    color: #fff;
+}
+
+/*give footer*/
+
+footer {
+    height:100px;
+    background:lightblue;
+}
+
+#container {
+    margin: 20px auto;
+    width: fit-content;
+}
+.square {
+    width: 50px;
+    height:50px;
+    margin:20px auto;
+}
+
+section#container:hover > .odd {
+    width: 100px;
+    height: 100px;
+    transform: translate(200px,0px) rotateZ(360deg);
+    transition-timing-function: ease;
+    transition: width 3s, height 3s, transform 5s 3s ease;
+}
+
+section#container:hover > .even {
+    width: 25px;
+    height: 25px;
+    transform: translate(-200px,0px) rotateZ(-360deg);
+    transition: width 3s, height 3s, transform 1s 3s;
+}
