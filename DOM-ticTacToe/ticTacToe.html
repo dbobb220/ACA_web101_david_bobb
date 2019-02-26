@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tic Tac Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="ticTacToe-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="ticTacToe.js"></script>
+</head>
+<body>
+    <header>Tic Tac Toe</header>
+    <main>
+        <section class="controls">
+            <div class="player">
+                <button id="player_1" onclick="changeMarkerToX()">x</button>
+                <button id="player_2" onclick="changeMarkerToO()">o</button>
+            </div>
+        </section>
+        <section class="board">
+            <div id="upper_left" onclick="placeMark(this.id)"></div>
+            <div id="upper_middle" onclick="placeMark(this.id)"></div>
+            <div id="upper_right" onclick="placeMark(this.id)"></div>
+            <div id="middle_left" onclick="placeMark(this.id)"></div>
+            <div id="middle" onclick="placeMark(this.id)"></div>
+            <div id="middle_right" onclick="placeMark(this.id)"></div>
+            <div id="lower_left" onclick="placeMark(this.id)"></div>
+            <div id="lower_middle" onclick="placeMark(this.id)"></div>
+            <div id="lower_right" onclick="placeMark(this.id)"></div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
