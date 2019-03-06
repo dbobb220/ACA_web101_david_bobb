@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="dashboard.css" />
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-
 </head>
 <body>
     <header>Dashboard</header>
@@ -76,7 +75,18 @@
                     </div>
                 </div>
             </section>
+            <section class="container">
+                <div id="geolocator">
+                    <h2>Coordinate Location</h2>
+                    <button id="location_btn" onclick="getLocation()">Get Coordinates</button>
+                    <div class="location_results">
+                        <p id="my_longitude"></p>
+                        <p id="my_latitude"></p>
+                    </div>
+                </div>
+            </section>
     </main>
     <footer></footer>
+    <script src="dashboard.js"></script>
 </body>
 </html>
