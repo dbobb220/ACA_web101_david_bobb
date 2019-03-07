@@ -2,7 +2,9 @@ $(function() {
 
     let $list = $('ul');
     let $newItemForm = $('#newItemForm');
-    let $close = $('.close');
+    let $listItem = $('li');
+
+    /// add submission to list
 
     $newItemForm.on('submit', function(e) {
         e.preventDefault();
@@ -10,11 +12,19 @@ $(function() {
         $list.append(`<li>${text}<span class="close">-</span></li>`);
         $('input[type="text"]').val('');
     });
-    
+
+    /// check completed task when clicked
+
     $list.on('click', 'li', function() {
-    let $this = $(this);
-    $this.addClass('checked');
+        let $this = $(this);
+        $this.addClass('checked');
     });
 
+    /// delete listed item
+
+    $(document).on('click', '.close', function() {
+        let $this = $(this);
+        $this.parent().remove();
+    });  
     
 });
