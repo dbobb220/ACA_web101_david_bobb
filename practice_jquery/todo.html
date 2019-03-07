@@ -6,13 +6,27 @@
     <title>jQuery To Do</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="todo.css">
-    <script src="todo.js"></script>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>To Do List</header>
+    <main>
+        <section class="to_do">
+                <form id="newItemForm">
+                    <input id="newItemField" type="text" placeholder="Enter task here...">
+                    <input id="add_btn" type="submit" value="+">
+                </form>
+            <div id="listed_items">
+                <ul id="listed_todo">
+                    <li>Take out the trash<span class="close">-</span></li>
+                    <li class="checked">Mow the lawn<span class="close">-</span></li>
+                    <li>Wash the car<span class="close">-</span></li>
+                    <li>Walk the dog<span class="close">-</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
     <footer></footer>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="./scripts/myscript.js"></script>   
+    <script src="/js/jquery.js"></script>   
+    <script src="todo.js"></script>
 </body>
 </html>
