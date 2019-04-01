@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="calcJS.css" />
+</head>
+<body>
+    <header>Calculator</header>
+    <main>
+        <div id="page_container">
+            <div id="calculator">
+                    <input type="text" id="calculator_screen" placeholder="0">
+                    <div id="calculator_buttons">
+                        <button class="clear calc_button gray">AC</button>
+                        <button class="neg_positive calc_button gray">+/-</button>
+                        <button class="percent calc_button gray">%</button>
+                        <button class="divide calc_button symbol">÷</button>
+                        <button class="seven calc_button digit" onclick="addNumber()" data-val="7">7</button>
+                        <button class="eight calc_button digit" onclick="addNumber()" data-val="8">8</button>
+                        <button class="nine calc_button digit" onclick="addNumber()" data-val="9">9</button>
+                        <button class="multiply calc_button symbol">×</button>
+                        <button class="four calc_button digit" onclick="addNumber()" data-val="4">4</button>
+                        <button class="five calc_button digit" onclick="addNumber()" data-val="5">5</button>
+                        <button class="six calc_button digit" onclick="addNumber()" data-val="6">6</button>
+                        <button class="minus calc_button symbol">−</button>
+                        <button class="one calc_button digit" onclick="addNumber()" data-val="1">1</button>
+                        <button class="two calc_button digit" onclick="addNumber()" data-val="2">2</button>
+                        <button class="three calc_button digit" onclick="addNumber()" data-val="3">3</button>
+                        <button class="add calc_button symbol">+</button>
+                        <button class="zero calc_button digit" onclick="addNumber()" data-val="0">0</button>
+                        <button class="decimal calc_button digit">.</button>
+                        <button class="equals calc_button symbol">=</button>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <script src="calcJS.js"></script>
+</body>
+</html>

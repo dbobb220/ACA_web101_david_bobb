@@ -7,29 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="ticTacToe-style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="ticTacToe.js"></script>
 </head>
 <body>
     <header>Tic Tac Toe</header>
     <main>
-        <section class="controls">
-            <div class="player">
-                <button id="player_1" onclick="changeMarkerToX()">x</button>
-                <button id="player_2" onclick="changeMarkerToO()">o</button>
-            </div>
-        </section>
+        <section id="message_box"></section>
+        <div id="clear_button" onclick="clearBoard()">Reset</div>
         <section class="board">
-            <div id="upper_left" onclick="placeMark(this.id)"></div>
-            <div id="upper_middle" onclick="placeMark(this.id)"></div>
-            <div id="upper_right" onclick="placeMark(this.id)"></div>
-            <div id="middle_left" onclick="placeMark(this.id)"></div>
-            <div id="middle" onclick="placeMark(this.id)"></div>
-            <div id="middle_right" onclick="placeMark(this.id)"></div>
-            <div id="lower_left" onclick="placeMark(this.id)"></div>
-            <div id="lower_middle" onclick="placeMark(this.id)"></div>
-            <div id="lower_right" onclick="placeMark(this.id)"></div>
+            <div class= "cell" id="upper_left" onclick="placeMark(this.id)" data-val="0"></div>
+            <div class= "cell" id="upper_middle" onclick="placeMark(this.id)" data-val="1"></div>
+            <div class= "cell" id="upper_right" onclick="placeMark(this.id)" data-val="2"></div>
+            <div class= "cell" id="middle_left" onclick="placeMark(this.id)" data-val="3"></div>
+            <div class= "cell" id="middle" onclick="placeMark(this.id)" data-val="4"></div>
+            <div class= "cell" id="middle_right" onclick="placeMark(this.id)" data-val="5"></div>
+            <div class= "cell" id="lower_left" onclick="placeMark(this.id)" data-val="6"></div>
+            <div class= "cell" id="lower_middle" onclick="placeMark(this.id)" data-val="7"></div>
+            <div class= "cell" id="lower_right" onclick="placeMark(this.id)" data-val="8"></div>
         </section>
     </main>
-    <footer></footer>
+    <script src="ticTacToe.js"></script>
 </body>
 </html>
