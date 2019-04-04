@@ -251,5 +251,34 @@ p#friendly_greeting {
    
 }
 
-/* No need for tablet styling as CSS grid was used to work
-for tablet design and for desktop design as per wireframes */
+/* Geolocator CSS */
+
+div#geolocator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button#location_btn {
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    width: fit-content;
+    border: 2px solid green;
+    color: green;
+    transition:.4s;
+}
+
+button#location_btn:hover {
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    width: fit-content;
+    border: 2px solid green;
+    color: white;
+    background:green;
+}
