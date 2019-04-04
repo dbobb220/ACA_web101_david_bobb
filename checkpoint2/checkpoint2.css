@@ -1,0 +1,180 @@
+/* Baseline CSS for Body, Main, Header*/
+
+body {
+    margin: 0;
+    font-family: Lato;
+}
+
+header {
+    height: 350px;
+    display: grid;
+    background: transparent;
+    color: #fff;
+    grid-template-rows: 30px auto;
+}
+
+.header_text {
+    font-size: 4em;
+    text-align: center;
+    margin: auto;
+}
+
+.header_text {
+    font-size: 4em;
+    text-align: center;
+    margin: auto;
+}
+
+.navigation nav a {
+    padding: 20px 10px;
+    margin: auto 50px;
+    border: 1px solid #fff;
+}
+
+.navigation {
+    justify-self: end;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+main {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.header_text {
+    font-size: 4em;
+    text-align: center;
+    margin: auto;
+}
+
+.navigation nav a {
+    padding: 10px 29px;
+    margin: auto 15px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation nav a:hover {
+    padding: 10px 29px;
+    margin: auto 15px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #000;
+    background:#fff;
+    transition:.5s;
+}
+
+.navigation {
+    justify-self: end;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+/* Article Design*/
+
+article.article {
+    width: 200px;
+    margin-top: 55px;
+    text-align: center;
+}
+
+article.article h2 {
+    font-size: 2em;
+    border-top: 30px solid;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+article.first h2 {
+    border-color: #2C97D5
+}
+
+article.second h2 {
+    border-color: #EF4F26
+}
+
+article.third h2 {
+    border-color: #28B9A3;
+}
+
+@media (max-width: 576px) { 
+    .navigation nav a.menu_item {
+        font-size: 1em;
+        margin: 0 10px 0 0;
+        padding: 5px 10px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        background: #F5F2F4;
+        color: #000;  
+    }    
+ }
+
+ /* Responsive video */
+
+ .iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Article Link Pages */
+
+  #article_focus h2 {
+    text-align: center;
+    font-size: 4em;
+    margin: 25px 10px;
+}
+
+#article_focus p {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 25px 10px;
+}
+
+main.article_page {
+    height: -webkit-fill-available;
+}
+
+article.article a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Animation */
+
+article.first h2:hover {
+    border-bottom: 30px solid #2C97D5;
+    border-top: 0px;
+}
+
+article.second h2:hover {
+    border-bottom: 30px solid #EF4F26;
+    border-top: 0px;
+}
+
+article.third h2:hover {
+    border-bottom: 30px solid #28B9A3;
+    border-top: 0px;
+}
